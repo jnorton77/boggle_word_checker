@@ -23,7 +23,7 @@ board.include?("apple") # => true or false, depending
 * [Play Boggle online](http://www.wordplays.com/boggle)
 
 ## Learning Goals
-* Modeling a simple real-world procedure in Ruby
+* Model a simple real-world procedure in Ruby.
 * Method definition, arguments, and return values
 * Common string methods
 * Simple algorithms and data structures
@@ -34,7 +34,7 @@ board.include?("apple") # => true or false, depending
 
 Take a step back. Breathe. I know you want to jump right in and start writing code. But don't! It's a trap!
 
-Get a pen and paper and draw out a 4-by-4 Boggle board. Imagine it filled with letters. Or actually fill it with letters if you like &mdash; maybe using your Boggle board generator.
+Get a pen and paper and draw out a 4-by-4 Boggle board. Imagine it filled with letters. Or actually fill it with letters if you like–maybe using your Boggle board generator.
 
 Have your pair spell out a word for you and verify yourself whether its on the board. It might help if the word is gibberish and not English so that you're forced to check letter-by-letter and can short-circuit the English-reading part of your brain.
 
