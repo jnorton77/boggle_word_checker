@@ -4,10 +4,10 @@
 class BoggleBoard
   def initialize
   end
-  
+
   def shake!
   end
-  
+
   def to_s
   end
 end
