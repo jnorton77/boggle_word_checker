@@ -60,3 +60,11 @@ puts board.include?("SRMTAO") == true
 puts board.include?("SRMTAM") == false
 puts board.include?("SRMTAZ") == false
 
+board.board = [ ["Q","E","E","N"],
+                ["R","A","T","E"],
+                ["L","O","N","E"],
+                ["K","A","F","Q"] ]
+puts board
+puts board.include?("queen") == true
+puts board.include?("QEEN") == true
+puts board.include?("REEN") == true
