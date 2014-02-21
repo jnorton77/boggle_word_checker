@@ -1,6 +1,3 @@
-# You should re-use and modify your old BoggleBoard class
-# to support the new requirements
-
 class BoggleBoard
   attr_accessor :board
 
@@ -31,11 +28,6 @@ class BoggleBoard
 
   def roll(die)
     result = die.sample
-    # if result == "Q"
-    #   "Qu"
-    # else
-    #   result.ljust(2)
-    # end
   end
 
   def to_s
@@ -90,50 +82,4 @@ class BoggleBoard
 end
 
 # TESTS
-
-puts "within_bounds? tests:"
-bounds = BoggleBoard.new
-puts bounds.within_bounds?(0,0) == true
-puts bounds.within_bounds?(3,3) == true
-puts bounds.within_bounds?(-1,0) == false
-puts bounds.within_bounds?(0,4) == false
-
-
-
-board = BoggleBoard.new
-board.shake!
-puts board
-# board.include?("apple") # => true or false, depending
-
-board.board = [["C", "A", "T", "-"],
-               ["-", "-", "-", "-"],
-               ["-", "-", "-", "-"],
-               ["-", "-", "-", "-"] ]
-puts board
-puts board.include?("cat")
-
-board.board = [["C", "-", "-", "-"],
-               ["A", "-", "-", "-"],
-               ["T", "-", "-", "-"],
-               ["-", "-", "-", "-"] ]
-puts board
-puts board.include?("cat")
-
-board.board = [["C", "-", "-", "-"],
-               ["A", "-", "-", "-"],
-               ["P", "-", "-", "-"],
-               ["-", "-", "-", "-"] ]
-puts board
-puts board.include?("cat")
-
-board.board = [ ["S","M","E","F"],
-                ["R","A","T","D"],
-                ["L","O","N","I"],
-                ["K","A","F","B"] ]
-puts board
-
-words = %w(nito ntfdibfako rates smefdtarlonibfak kotf dets)
-words.each do |word|
-  print word + ":  "
-  puts board.include?(word)
-end
+require_relative 'boggle_board_tests'
